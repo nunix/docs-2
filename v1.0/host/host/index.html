@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://docs.harvesterhci.io/v1.0/host/host/">
       
       <link rel="icon" href="../../assets/favicon.ico">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.13">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.8">
     
     
       
@@ -19,11 +19,12 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.e411adfe.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.cc9b2e1e.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
         
+      
       
     
     
@@ -371,10 +372,85 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Upgrade
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Upgrade" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Upgrade
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
       <a href="../../upgrade/automatic/" class="md-nav__link">
         Upgrading Harvester
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../upgrade/v1-0-1-to-v1-0-2/" class="md-nav__link">
+        Upgrade from v1.0.1 to v1.0.2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../upgrade/v1-0-0-to-v1-0-1/" class="md-nav__link">
+        Upgrade from v1.0.0 to v1.0.1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../upgrade/troubleshooting/" class="md-nav__link">
+        Troubleshooting
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -521,7 +597,7 @@
   
     <li class="md-nav__item">
       <a href="../../vm/create-vm/" class="md-nav__link">
-        Create a VM
+        Create a Virtual Machine
       </a>
     </li>
   
@@ -535,7 +611,21 @@
   
     <li class="md-nav__item">
       <a href="../../vm/create-windows-vm/" class="md-nav__link">
-        Create a Windows VM
+        Create a Windows Virtual Machine
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vm/edit-vm/" class="md-nav__link">
+        Edit a Virtual Machine
       </a>
     </li>
   
@@ -549,7 +639,7 @@
   
     <li class="md-nav__item">
       <a href="../../vm/access-to-the-vm/" class="md-nav__link">
-        Access to the Virtual Machine (VM)
+        Access to the Virtual Machine
       </a>
     </li>
   
@@ -592,6 +682,20 @@
     <li class="md-nav__item">
       <a href="../../vm/hotplug-volume/" class="md-nav__link">
         Hot-Plug Volumes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vm/resource-overcommit/" class="md-nav__link">
+        Resource Overcommit
       </a>
     </li>
   
@@ -1064,6 +1168,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/monitoring/" class="md-nav__link">
+        Monitoring
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1206,7 +1324,7 @@
 
 
 <h1 id="host-management">Host Management<a class="headerlink" href="#host-management" title="Permanent link">&para;</a></h1>
-<p>Users can view and manage Harvester nodes from the host page. The first node always defaults to be a management node of the cluster. When there are more than three nodes, the two other nodes that first joined are automatically promoted to management nodes to form a HA cluster.</p>
+<p>Users can view and manage Harvester nodes from the host page. The first node always defaults to be a management node of the cluster. When there are three or more nodes, the two other nodes that first joined are automatically promoted to management nodes to form a HA cluster.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Because Harvester is built on top of Kubernetes and uses etcd as its database, the maximum node fault toleration is one when there are three management nodes.</p>
@@ -1271,6 +1389,7 @@ If your disk does not have a WWN, you can format it with the <code>EXT4</code> f
 
               
             </article>
+            
           </div>
         </div>
         
@@ -1278,7 +1397,8 @@ If your disk does not have a WWN, you can format it with the <code>EXT4</code> f
       
         <footer class="md-footer">
   
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
         <a href="../../upload-image/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Upload Images" rel="prev">
@@ -1297,13 +1417,13 @@ If your disk does not have a WWN, you can format it with the <code>EXT4</code> f
       
       
         
-        <a href="../../vm/create-vm/" class="md-footer__link md-footer__link--next" aria-label="Next: Create a VM" rel="next">
+        <a href="../../vm/create-vm/" class="md-footer__link md-footer__link--next" aria-label="Next: Create a Virtual Machine" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Create a VM
+              Create a Virtual Machine
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -1333,10 +1453,10 @@ If your disk does not have a WWN, you can format it with the <code>EXT4</code> f
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.ed9748b7.min.js"></script>
+      <script src="../../assets/javascripts/bundle.0238f547.min.js"></script>
       
         <script src="../../assets/swagger-ui/swagger-ui-bundle.js"></script>
       
